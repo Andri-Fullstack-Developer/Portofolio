@@ -24,8 +24,6 @@ function Home() {
   const instagramLink = "https://www.instagram.com/4ndev/?hl=en";
   const linkedinLink = "https://www.linkedin.com/in/4ndr1-25-2a9b86221/";
 
-
-
   return (
     <div className="h-screen w-full  flex flex-col justify-center items-center">
       <ParticlesBackground />
@@ -80,7 +78,6 @@ function Home() {
             <span className="ms-4">Whatsapp</span>
           </button>
         </Link>
-        
       </div>
     </div>
   );
