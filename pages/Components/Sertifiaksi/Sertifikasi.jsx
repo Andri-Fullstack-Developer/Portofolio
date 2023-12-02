@@ -11,67 +11,67 @@ const Sertifikasi = () => {
     SertifikasiData: [
       {
         judul: "Startegi Pelingdung data atau Cyber",
-        image: "/set/01.png",
+        image: "/assets/Penghargaan/01.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Mobile Devoloper and Flutter",
-        image: "/set/02.png",
+        image: "/assets/Penghargaan/02.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Mengunkan React Hook",
-        image: "/set/03.png",
+        image: "/assets/Penghargaan/03.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Seorang Full Stack Devoloper",
-        image: "/set/04.png",
+        image: "/assets/Penghargaan/04.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Stop Syberbullying",
-        image: "/set/05.png",
+        image: "/assets/Penghargaan/05.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Sumpah Permuad UMKM",
-        image: "/set/06.png",
+        image: "/assets/Penghargaan/06.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Fluter Login Devoloper",
-        image: "/set/07.png",
+        image: "/assets/Penghargaan/07.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Visualisasi Data",
-        image: "/set/08.png",
+        image: "/assets/Penghargaan/08.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "E-commerce Data analysis",
-        image: "/set/09.png",
+        image: "/assets/Penghargaan/09.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Basic Api Devoloper",
-        image: "/set/10.png",
+        image: "/assets/Penghargaan/10.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Mengunkan React Hook",
-        image: "/set/11.png",
+        image: "/assets/Penghargaan/11.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "DevOps",
-        image: "/set/12.png",
+        image: "/assets/Penghargaan/12.png",
         dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Build Prefesional website wordpress",
-        image: "/set/13.png",
+        image: "/assets/Penghargaan/13.png",
         dis: "Filem Upin dan Ipin 1",
       },
      
