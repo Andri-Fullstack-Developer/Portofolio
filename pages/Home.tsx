@@ -3,10 +3,11 @@ import React, { use, useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard, faHeart, faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faReceipt } from "@fortawesome/free-solid-svg-icons";
+import { faReceipt, faAward } from "@fortawesome/free-solid-svg-icons";
 import { createGlobalStyle } from "styled-components";
 import "@fontsource/poppins";
 import { faInstagram, faLinkedin, faWhatsapp, faEnvira } from "@fortawesome/free-brands-svg-icons";
+
 
 import ParticlesBackground from "./Components/bacgrounfParticles";
 
@@ -36,10 +37,10 @@ function Home() {
             <span className="ms-4">About</span>
           </button>
         </Link>
-        <Link href={"./Components/CV/cv"} className="w-full mb-3 ">
+        <Link href={"./Components/Sertifiaksi/Sertifikasi"} className="w-full mb-3 ">
           <button className="border-2 border-white rounded-full w-full p-2 overflow-hidden transform transition-transform duration-300 hover:scale-110">
-            <FontAwesomeIcon icon={faReceipt} />
-            <span className="ms-4">CV</span>
+            <FontAwesomeIcon icon={faAward} />
+            <span className="ms-4">Sertifikat</span>
           </button>
         </Link>
         <Link href={"./Components/Porto/portofolio"} className="w-full mb-3 ">

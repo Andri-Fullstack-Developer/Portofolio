@@ -2,10 +2,24 @@ import { abort } from "process";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import {faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot, faPhone, faPersonSwimming, faBasketball, faPersonRunning, faTableTennisPaddleBall } from "@fortawesome/free-solid-svg-icons";
 
 const about = () => {
+  const downloadCV = () => {
+    const cvFileName = "./doc.pdf";
+
+    const downloadLink = document.createElement("a");
+    downloadLink.href = `/${cvFileName}`;
+    downloadLink.download = cvFileName;
+
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+
+  };
+
   const colorsHtml = ["bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", , "bg-slate-600"];
   const colorsReactJs = ["bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-600", , "bg-slate-600"];
   const colorsPhp = ["bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-600", "bg-slate-600", "bg-slate-600", , "bg-slate-600"];
@@ -43,10 +57,17 @@ const about = () => {
                 </h6>
               </div>
               <div className="bg-slate-600 p-2">
-                <h6 className="ms-6">
-                  <FontAwesomeIcon icon={faLinkedin} className="me-3" />
-                  @4ndr1 25
-                </h6>
+                <div className="flex justify-center items-center">
+                  <div className="grow w-14 text-center">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </div>
+                  <div className="grow-0 ">
+                    <button onClick={downloadCV}>CV</button>
+                  </div>
+                  <div className="grow w-14 text-center">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                  </div>
+                </div>
               </div>
 
               <div className="grid grid-cols-3 mt-5 justify-center items-center pl-1 pr-1">
