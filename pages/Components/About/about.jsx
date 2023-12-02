@@ -5,6 +5,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot, faPhone, faPersonSwimming, faBasketball, faPersonRunning, faTableTennisPaddleBall } from "@fortawesome/free-solid-svg-icons";
+import SplashScreen from '../SplashScreen/SplashScreen'
 
 const about = () => {
   const downloadCV = () => {
@@ -26,6 +27,7 @@ const about = () => {
 
   return (
     <div className="xl:h-screen flex lg:flex-col items-center justify-center">
+         <SplashScreen />
       <div className="w-full lg:w-8/12 bg-white p-3 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:flex-col-reverse lg:w-full">
           {/* Kolom Kiri */}

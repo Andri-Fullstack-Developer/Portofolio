@@ -1,8 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import SplashScreen from "../SplashScreen/SplashScreen";
 
 const Galery = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  // const [shuffledImage, setShuffledImage] = useState([]);
+  const [shuffledImages, setShuffledImages] = useState([]);
 
   const images = [
     { src: "/assets/Galery/DesainerWeb/Web (1).png", datatype: "All web" },
@@ -31,8 +35,6 @@ const Galery = () => {
     { src: "/assets/Galery/Camera/Camera (8).png", datatype: "All camera" },
     { src: "/assets/Galery/Camera/Camera (9).png", datatype: "All camera" },
     { src: "/assets/Galery/Camera/Camera (10).png", datatype: "All camera" },
-   
-    
   ];
 
   function shuffleArray(array: any) {
@@ -43,19 +45,22 @@ const Galery = () => {
     return array;
   }
 
-  const filteredImages = images.filter((image) => {
-    if (selectedCategory === "All") {
-      return true;
-    }
+  useEffect(() => {
+    const filteredImages = images.filter((image) => {
+      if (selectedCategory === "All") {
+        return true;
+      }
+      return image.datatype.includes(selectedCategory.toLowerCase());
+    });
 
-    return image.datatype.includes(selectedCategory.toLowerCase());
-  });
-
-    const shuffledImages = shuffleArray(filteredImages);
+    const newShuffledImages = shuffleArray(filteredImages);
+    setShuffledImages(newShuffledImages);
+  }, [selectedCategory]);
 
   return (
     <div className="flex lg:flex-col items-center justify-center">
       <div className="w-full lg:w-9/12 bg-slate-600 p-3 text-black m-7 rounded-sm">
+        <SplashScreen />
         <div className="w-full p-1 space-x-2 text-white flex justify-center items-center">
           <button onClick={() => setSelectedCategory("All")} className={`text-white pl-6 pr-6 p-1 rounded-lg sm:pl-8 sm:pr-8 ${selectedCategory === "All" ? "bg-sky-950" : "text-black"}`}>
             All
@@ -70,7 +75,6 @@ const Galery = () => {
             Web
           </button>
         </div>
-
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-3">
           {shuffledImages.map((image: any, index: any) => (
             <div key={index} className="grid gap-4">
@@ -78,6 +82,7 @@ const Galery = () => {
             </div>
           ))}
         </div>
+        SplashScreen
       </div>
     </div>
   );

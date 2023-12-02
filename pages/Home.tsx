@@ -7,7 +7,7 @@ import { faReceipt, faAward } from "@fortawesome/free-solid-svg-icons";
 import { createGlobalStyle } from "styled-components";
 import "@fontsource/poppins";
 import { faInstagram, faLinkedin, faWhatsapp, faEnvira } from "@fortawesome/free-brands-svg-icons";
-
+import SplashScreen from "./Components/SplashScreen/SplashScreen";
 
 import ParticlesBackground from "./Components/bacgrounfParticles";
 
