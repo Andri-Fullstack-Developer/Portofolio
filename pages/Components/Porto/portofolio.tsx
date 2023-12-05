@@ -146,26 +146,26 @@ const Portofolio = () => {
           </div>
         </div>
         {/* col 2 */}
-        {/* <div className="grid lg:grid-cols-2 mt-10">
+        <div className="grid lg:grid-cols-2 mt-10">
           <div className="flex justify-center items-center p-5">
             <div className="p-3 border-2  lg:w-10/12 bg-slate-600 rounded-xl border-b-8 border-r-8">
               <div className="p-4">
                 <Link href={""} className="cursor-pointer overflow-hidden rounded-lg relative">
                   <div className="relative overflow-hidden rounded-lg">
-                    <Image src={"/Images/pjt1.jpg"} width={100} height={50} layout="responsive" className="rounded-lg transition-transform duration-300 transform-gpu hover:scale-105" alt="Project" />
+                    <Image src={"/assets/Project/Pro5.png"} width={100} height={50} layout="responsive" className="rounded-lg transition-transform duration-300 transform-gpu hover:scale-105" alt="Project" />
                   </div>
                 </Link>
                 <div className="mt-4 flex w-full flex-col item-start justify-between">
                   <span className="text-lg font-medium lg:text-lg md:text-base text-teal-500">Website Template</span>
                   <Link href={""} className="rounded text-lg font-medium md:text-base hover:underline">
-                    <h2 className="my-2 w-full text-left text-1xl font-bold lg:text-2xl ">Filem Kartun Upin & Ipin</h2>
+                    <h2 className="my-2 w-full text-left text-1xl font-bold lg:text-2xl ">Mobile App Gym</h2>
                   </Link>
 
                   <div className="flex w-full items-center justify-between">
                     <Link href={""} className="rounded text-sm font-medium underline md:text-base ">
                       Visit
                     </Link>
-                    <Link href={""} className="w-8 md:w-6 ">
+                    <Link href={"https://github.com/Andri-Fullstack-Developer/flutter-gym.git"} className="w-8 md:w-6 ">
                       <FontAwesomeIcon icon={faGithub} />
                     </Link>
                   </div>
@@ -174,7 +174,7 @@ const Portofolio = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center p-5">
+          {/* <div className="flex justify-center items-center p-5">
             <div className="p-3 border-2  lg:w-10/12 bg-slate-600 rounded-xl border-b-8 border-r-8">
               <div className="p-4">
                 <Link href={""} className="cursor-pointer overflow-hidden rounded-lg relative">
@@ -199,8 +199,8 @@ const Portofolio = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
         {/* End Pro */}
       </div>
     </div>
