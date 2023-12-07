@@ -82,7 +82,7 @@ const Galery = () => {
             </div>
           ))}
         </div>
-        SplashScreen
+    
       </div>
     </div>
   );
