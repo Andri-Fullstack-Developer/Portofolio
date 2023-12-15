@@ -5,8 +5,9 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot, faPhone, faPersonSwimming, faBasketball, faPersonRunning, faTableTennisPaddleBall } from "@fortawesome/free-solid-svg-icons";
-import SplashScreen from '../SplashScreen/SplashScreen'
+import SplashScreen from "../SplashScreen/SplashScreen";
 import Link from "next/link";
+import swal from "sweetalert";
 
 const about = () => {
   const downloadCV = () => {
@@ -19,7 +20,14 @@ const about = () => {
     downloadLink.style.display = "none";
     document.body.appendChild(downloadLink);
     downloadLink.click();
+  };
 
+  const onclik_alert = () => {
+    href = "swal";
+
+    swal({
+      icon: "success",
+    });
   };
 
   const colorsHtml = ["bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", "bg-slate-50", , "bg-slate-600"];
@@ -28,7 +36,7 @@ const about = () => {
 
   return (
     <div className="xl:h-screen flex lg:flex-col items-center justify-center">
-         <SplashScreen />
+      <SplashScreen />
       <div className="w-full lg:w-8/12 bg-white p-3 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:flex-col-reverse lg:w-full">
           {/* Kolom Kiri */}
@@ -66,7 +74,17 @@ const about = () => {
                   </div>
                   <div className="grow-0 ">
                     {/* <button onClick={downloadCV}>CV</button> */}
-                    <Link download={'/doc.pdf'} href="/doc.pdf">CV</Link>
+                    <Link
+                      download={onclik_alert}
+                      href={"#"}
+                      onClick={() => {
+                        swal({
+                          icon: "error",
+                        });
+                      }}
+                    >
+                      CV
+                    </Link>
                   </div>
                   <div className="grow w-14 text-center">
                     <FontAwesomeIcon icon={faArrowLeft} />
