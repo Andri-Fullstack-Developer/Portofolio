@@ -6,6 +6,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot, faPhone, faPersonSwimming, faBasketball, faPersonRunning, faTableTennisPaddleBall } from "@fortawesome/free-solid-svg-icons";
 import SplashScreen from '../SplashScreen/SplashScreen'
+import Link from "next/link";
 
 const about = () => {
   const downloadCV = () => {
@@ -64,7 +65,8 @@ const about = () => {
                     <FontAwesomeIcon icon={faArrowRight} />
                   </div>
                   <div className="grow-0 ">
-                    <button onClick={downloadCV}>CV</button>
+                    {/* <button onClick={downloadCV}>CV</button> */}
+                    <Link download={'/doc.pdf'} href="/doc.pdf">CV</Link>
                   </div>
                   <div className="grow w-14 text-center">
                     <FontAwesomeIcon icon={faArrowLeft} />
