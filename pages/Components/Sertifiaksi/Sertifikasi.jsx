@@ -78,6 +78,26 @@ const Sertifikasi = () => {
         image: "/assets/Penghargaan/13.png",
         dis: "Filem Upin dan Ipin 1",
       },
+      {
+        judul: "Flutter & Dart The Complete Guide",
+        image: "/assets/Penghargaan/14.jpg"
+      },
+      {
+        judul: "The Complete Web Devoloper",
+        image: "/assets/Penghargaan/15.jpg"
+      },
+      {
+        judul: "Web Development Bootcamp",
+        image: "/assets/Penghargaan/16.jpg"
+      },
+      {
+        judul: "The Complete Bootcamp Full Stack",
+        image: "/assets/Penghargaan/17.jpg"
+      },
+      {
+        judul: "Advanced CSS and Sass",
+        image: "/assets/Penghargaan/18.jpg"
+      },
     ],
   };
 
@@ -105,7 +125,7 @@ const Sertifikasi = () => {
   return (
     <div className="relative flex justify-center items-center">
       <SplashScreen />
-      <div className="w-10/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-4 gap-4 mt-4 p-1 relative z-10">
+      <div className="w-10/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-4 gap-4 mt-4 pt-1 pb-5 relative z-10">
         {shuffledImages.map((sertifikasi, index) => (
           <div className="relative group" key={index}>
             <Link href={""}>
