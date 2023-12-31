@@ -80,23 +80,28 @@ const Sertifikasi = () => {
       },
       {
         judul: "Flutter & Dart The Complete Guide",
-        image: "/assets/Penghargaan/14.jpg"
+        image: "/assets/Penghargaan/14.jpg",
+        dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "The Complete Web Devoloper",
-        image: "/assets/Penghargaan/15.jpg"
+        image: "/assets/Penghargaan/15.jpg",
+        dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Web Development Bootcamp",
-        image: "/assets/Penghargaan/16.jpg"
+        image: "/assets/Penghargaan/16.jpg",
+        dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "The Complete Bootcamp Full Stack",
-        image: "/assets/Penghargaan/17.jpg"
+        image: "/assets/Penghargaan/17.jpg",
+        dis: "Filem Upin dan Ipin 1",
       },
       {
         judul: "Advanced CSS and Sass",
-        image: "/assets/Penghargaan/18.jpg"
+        image: "/assets/Penghargaan/18.jpg",
+        dis: "Filem Upin dan Ipin 1",
       },
     ],
   };
